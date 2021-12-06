@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>266</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Коррекция топологии</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>5</y>
+     <width>246</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Таблица </string>
+   </property>
+   <widget class="QComboBox" name="cb_tab_topo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>25</y>
+      <width>226</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>60</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Таблица топологических ошибок</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ln_topo_erro">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>85</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>246</width>
+     <height>176</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Устранять ошибки</string>
+   </property>
+   <widget class="QCheckBox" name="ch_db_points">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>166</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Дублирующеся точки</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ch_self_intersect">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>45</y>
+      <width>191</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Самопересечения</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ch_overlap">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>95</y>
+      <width>171</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Перекрытия полигонов</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ch_gap">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>145</y>
+      <width>201</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Пустоты между полигонами</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ch_lim_area">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>231</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Минимальные площади полигонов</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ch_lim_angle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Удаление вершин в которых угол меньше заданного</string>
+    </property>
+    <property name="text">
+     <string>Удаление вершин </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ln_angle">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>70</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_run">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>315</y>
+     <width>85</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выполнить</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
