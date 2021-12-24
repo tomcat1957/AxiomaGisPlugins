@@ -407,6 +407,8 @@ def runTopoCorrect(table_topoError:Table,table_correct:Table,property,angle_lim_
             print("Ошибка поиска записи id "+str(id_value))
             continue
         ft=fts[0]
+        if ft.geometry is None:
+            continue
         if type_err==TypeTopoError.NoValidGeometry:
             if not ft.geometry.is_valid:
                 new_geo=ft.geometry.normalize()

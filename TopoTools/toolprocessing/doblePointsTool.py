@@ -124,7 +124,10 @@ def deleteDoublePoint(geo_base,geo_double):
                     for i in range(count_pts-1):
                         id=count_pts-1-i
                         id_point=duble_points_ext[id]['id']
-                        out_geometry.holes[id_hole].remove(id_point)
+                        try:
+                            out_geometry.holes[id_hole].remove(id_point)
+                        except Exception as ex:
+                            print(ex)
                 id_hole=id_hole+1
         return out_geometry
     return None
